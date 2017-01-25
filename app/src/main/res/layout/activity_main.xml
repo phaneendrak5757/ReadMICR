@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fincare.cts.MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Fincare" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MIRC"
+        android:ems="10"
+        android:layout_below="@+id/sample_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/mirc" />
+
+    <Button
+        android:text="Read MCIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mirc"
+        android:layout_toRightOf="@+id/mirc"
+        android:layout_toEndOf="@+id/mirc"
+        android:id="@+id/readMIRC" />
+
+    <Button
+        android:text="Capture Front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/readMIRC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/c_fnt" />
+
+    <Button
+        android:text="Capture Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c_bak"
+        android:layout_alignBaseline="@+id/c_fnt"
+        android:layout_alignBottom="@+id/c_fnt"
+        android:layout_toRightOf="@+id/c_fnt"
+        android:layout_toEndOf="@+id/c_fnt"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <Button
+        android:text="Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/readMIRC"
+        android:layout_toStartOf="@+id/readMIRC"
+        android:id="@+id/upload" />
+
+</RelativeLayout>
